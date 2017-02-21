@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "μframework encapsulating the `CopyOnWrite` type, to make implementing value semantics easy!"
 
   s.description  = <<-DESC
-TODO: THIS
+                   TODO: THIS
                    DESC
 
   s.homepage     = "https://github.com/klundberg/CopyOnWrite"
@@ -20,8 +20,8 @@ TODO: THIS
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/klundberg/CopyOnWrite.git", :tag => "v0.1.0" }
+  s.source       = { :git => "https://github.com/klundberg/CopyOnWrite.git", :tag => "v#{s.version}" }
 
-  s.source_files  = "Sources/*.swift"
+  s.source_files = "Sources/*.swift"
 
 end
