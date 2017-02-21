@@ -1,8 +1,8 @@
 //
-//  CopyOnWriteTests.swift
-//  CopyOnWriteTests
+//  CopyOnWriteNSMutableCopyingTests.swift
+//  CopyOnWrite
 //
-//  Created by Kevin Lundberg on 2/20/17.
+//  Created by Kevin Lundberg on 2/21/17.
 //  Copyright © 2017 Kevin Lundberg. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import XCTest
 import Foundation
 @testable import CopyOnWrite
 
-class CopyOnWriteTests: XCTestCase {
+class CopyOnWriteNSCopyingTests: XCTestCase {
 
-    var copyonwrite: CopyOnWrite<NSMutableString>!
+    var copyonwrite: CopyOnWrite<Container>!
 
     override func setUp() {
         super.setUp()
 
-        copyonwrite = CopyOnWrite(reference: NSMutableString(), copier: { NSMutableString(string: $0 as String) })
+        copyonwrite = CopyOnWrite(copyingReference: Container())
     }
 
     func test_StringDoesNotCopy_WhenAccessingImmutableReference_WhileItIsUniquelyReferenced() {

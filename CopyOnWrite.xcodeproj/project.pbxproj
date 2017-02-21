@@ -11,6 +11,10 @@
 		7985B9491E5BF1C800C100E7 /* CopyOnWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9481E5BF1C800C100E7 /* CopyOnWriteTests.swift */; };
 		7985B94B1E5BF1C800C100E7 /* CopyOnWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7985B9581E5BF50700C100E7 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9571E5BF50700C100E7 /* CopyOnWrite.swift */; };
+		7985B9611E5C0B1400C100E7 /* CopyOnWriteNSMutableCopyingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B95F1E5C0B0600C100E7 /* CopyOnWriteNSMutableCopyingTests.swift */; };
+		7985B9631E5C0C6800C100E7 /* CopyOnWriteNSCopyingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9621E5C0C6800C100E7 /* CopyOnWriteNSCopyingTests.swift */; };
+		7985B9651E5C0FE300C100E7 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9641E5C0FE300C100E7 /* Container.swift */; };
+		7985B9671E5C103E00C100E7 /* CopyOnWriteCloneableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9661E5C103E00C100E7 /* CopyOnWriteCloneableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 		7985B9591E5BF60A00C100E7 /* CopyOnWrite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = CopyOnWrite.podspec; sourceTree = "<group>"; };
 		7985B95B1E5BF63B00C100E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7985B95C1E5BF63B00C100E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7985B95F1E5C0B0600C100E7 /* CopyOnWriteNSMutableCopyingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyOnWriteNSMutableCopyingTests.swift; sourceTree = "<group>"; };
+		7985B9621E5C0C6800C100E7 /* CopyOnWriteNSCopyingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyOnWriteNSCopyingTests.swift; sourceTree = "<group>"; };
+		7985B9641E5C0FE300C100E7 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		7985B9661E5C103E00C100E7 /* CopyOnWriteCloneableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyOnWriteCloneableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,10 @@
 		7985B9471E5BF1C800C100E7 /* CopyOnWriteTests */ = {
 			isa = PBXGroup;
 			children = (
+				7985B9641E5C0FE300C100E7 /* Container.swift */,
+				7985B9661E5C103E00C100E7 /* CopyOnWriteCloneableTests.swift */,
+				7985B9621E5C0C6800C100E7 /* CopyOnWriteNSCopyingTests.swift */,
+				7985B95F1E5C0B0600C100E7 /* CopyOnWriteNSMutableCopyingTests.swift */,
 				7985B9481E5BF1C800C100E7 /* CopyOnWriteTests.swift */,
 				7985B94A1E5BF1C800C100E7 /* Info.plist */,
 			);
@@ -227,6 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7985B9491E5BF1C800C100E7 /* CopyOnWriteTests.swift in Sources */,
+				7985B9651E5C0FE300C100E7 /* Container.swift in Sources */,
+				7985B9611E5C0B1400C100E7 /* CopyOnWriteNSMutableCopyingTests.swift in Sources */,
+				7985B9631E5C0C6800C100E7 /* CopyOnWriteNSCopyingTests.swift in Sources */,
+				7985B9671E5C103E00C100E7 /* CopyOnWriteCloneableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
