@@ -67,7 +67,7 @@
 		7985B9301E5BF1C800C100E7 = {
 			isa = PBXGroup;
 			children = (
-				7985B93C1E5BF1C800C100E7 /* CopyOnWrite */,
+				7985B93C1E5BF1C800C100E7 /* Sources */,
 				7985B9471E5BF1C800C100E7 /* CopyOnWriteTests */,
 				7985B9541E5BF48600C100E7 /* Distribution */,
 				7985B93B1E5BF1C800C100E7 /* Products */,
@@ -83,14 +83,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7985B93C1E5BF1C800C100E7 /* CopyOnWrite */ = {
+		7985B93C1E5BF1C800C100E7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */,
 				7985B9571E5BF50700C100E7 /* CopyOnWrite.swift */,
 				7985B93E1E5BF1C800C100E7 /* Info.plist */,
 			);
-			name = CopyOnWrite;
 			path = Sources;
 			sourceTree = "<group>";
 		};
