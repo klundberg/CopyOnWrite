@@ -6,7 +6,7 @@ language: objective-c
 
 env:
 - DESTINATION='platform=OS X'
-- DESTINATION='platform=iOS Simulator,name=iPhone 6s'
+- DESTINATION='platform=iOS Simulator,name=iPhone SE'
 - DESTINATION='platform=tvOS Simulator,name=Apple TV 1080p'
 
 script:
