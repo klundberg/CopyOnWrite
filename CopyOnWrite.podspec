@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
 
   s.description  = <<-DESC
                    μframework encapsulating the `CopyOnWrite` type, to make implementing value semantics easy!
-                   Wrap your reference types in the `CopyOnWrite` struct and access the value from the `reference` and `mutatingReference` properties as appropriate, and value semantics will be preserved for your type!
+                   Wrap your reference types in the `CopyOnWrite` struct and access the value from the `reference`
+                   and `mutatingReference` properties as appropriate, and your type will have proper value semantics!
                    DESC
 
   s.homepage     = "https://github.com/klundberg/CopyOnWrite"
