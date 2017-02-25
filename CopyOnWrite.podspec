@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
-
   s.name         = "CopyOnWrite"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A μframework that makes implementing value semantics easy!"
 
   s.description  = <<-DESC
@@ -12,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/klundberg/CopyOnWrite"
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = "MIT"
 
   s.author             = { "Kevin Lundberg" => "kevin@klundberg.com" }
   s.social_media_url   = "http://twitter.com/kevlario"
@@ -23,7 +22,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/klundberg/CopyOnWrite.git", :tag => "v#{s.version}" }
-
   s.source_files = "Sources/*.swift"
-
 end
