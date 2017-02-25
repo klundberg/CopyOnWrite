@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
 
   s.name         = "CopyOnWrite"
   s.version      = "0.1.0"
-  s.summary      = "μframework encapsulating the `CopyOnWrite` type, to make implementing value semantics easy!"
+  s.summary      = "A μframework that makes implementing value semantics easy!"
 
   s.description  = <<-DESC
-                   μframework encapsulating the `CopyOnWrite` type, to make implementing value semantics easy!
-                   Wrap your reference types in the `CopyOnWrite` struct and access the value from the `reference`
-                   and `mutatingReference` properties as appropriate, and your type will have proper value semantics!
+                   CopyOnWrite is a μframework that makes implementing value semantics easy!
+                   Wrap your reference types in the `CopyOnWrite` struct and access the value from the
+                   appropriate accessor properties, and your type will have proper value semantics!
                    DESC
 
   s.homepage     = "https://github.com/klundberg/CopyOnWrite"
