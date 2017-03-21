@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793E144C1E80E1DC00BF167D /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7985B93A1E5BF1C800C100E7 /* CopyOnWrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CopyOnWrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyOnWrite.h; sourceTree = "<group>"; };
 		7985B93E1E5BF1C800C100E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 				7985B95B1E5BF63B00C100E7 /* LICENSE */,
 				7985B9551E5BF49300C100E7 /* Package.swift */,
 				7985B95C1E5BF63B00C100E7 /* README.md */,
+				793E144C1E80E1DC00BF167D /* CHANGELOG.md */,
 			);
 			name = Distribution;
 			sourceTree = "<group>";

@@ -161,7 +161,7 @@ Take care to use the correct initializer for the right type you want to store. I
 
 ## Requirements
 
-* 0.1.0 is supported on Xcode 8.0+/Swift 3.0+
+* 0.9.0 is supported on Xcode 8.0+/Swift 3.0+
 * iOS 8+/OS X 10.9+/watchOS 2+/tvOS 9+
 
 ## Installation
@@ -171,7 +171,7 @@ Take care to use the correct initializer for the right type you want to store. I
 `CopyOnWrite` is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CopyOnWrite', '~> 0.1.0'
+pod 'CopyOnWrite', '~> 0.9.0'
 ```
 
 ### Carthage
@@ -179,7 +179,7 @@ pod 'CopyOnWrite', '~> 0.1.0'
 `CopyOnWrite` can be integrated with [Carthage](https://github.com/Carthage/Carthage). Add the following to your `Cartfile` to use it:
 
 ```
-github "klundberg/CopyOnWrite" ~> 0.1.0
+github "klundberg/CopyOnWrite" ~> 0.9.0
 ```
 
 ### Swift Package Manager
@@ -187,7 +187,7 @@ github "klundberg/CopyOnWrite" ~> 0.1.0
 Add the following line to your dependencies list in your `Package.swift` file:
 
 ```
-.Package(url: "https://github.com/klundberg/CopyOnWrite.git", versions:Version(0,1,0)..<Version(0,2,0)),
+.Package(url: "https://github.com/klundberg/CopyOnWrite.git", versions:Version(0,9,0)..<Version(1,0,0)),
 ```
 
 ### Manual Installation

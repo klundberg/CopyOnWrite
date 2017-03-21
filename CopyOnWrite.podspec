@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CopyOnWrite"
-  s.version      = "0.1.1"
+  s.version      = "0.9.0"
   s.summary      = "A μframework that makes implementing value semantics easy!"
 
   s.description  = <<-DESC
