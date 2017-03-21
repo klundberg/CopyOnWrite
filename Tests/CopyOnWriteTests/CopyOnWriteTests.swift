@@ -12,37 +12,50 @@ import Foundation
 
 class CopyOnWriteTests: XCTestCase {
 
-    var copyonwrite: CopyOnWrite<NSMutableString>!
+    var values: [CopyOnWrite<Container>] = []
 
     override func setUp() {
         super.setUp()
 
-        copyonwrite = CopyOnWrite(reference: NSMutableString(), copier: { NSMutableString(string: $0 as String) })
+        values = [
+            CopyOnWrite(reference: Container(), copier: { $0.clone() }),
+            CopyOnWrite(reference: Container()),
+            CopyOnWrite(copyingReference: Container()),
+            CopyOnWrite(mutableCopyingReference: Container()),
+        ]
     }
 
     func test_StringDoesNotCopy_WhenAccessingImmutableReference_WhileItIsUniquelyReferenced() {
-        copyonwrite.reference.append("foo")
+        for value in values {
+            value.reference.append("foo")
 
-        XCTAssertEqual(copyonwrite.reference, "foo")
+            XCTAssertEqual(value.reference, "foo")
+        }
     }
 
     func test_StringDoesNotCopy_WhenAccessingImmutableReference_WhileItIsNotUniquelyReferenced() {
-        let old = copyonwrite!
-        copyonwrite.reference.append("foo")
+        for value in values {
+            let old = value
+            value.reference.append("foo")
 
-        XCTAssertEqual(old.reference, "foo")
+            XCTAssertEqual(old.reference, "foo")
+        }
     }
 
     func test_StringDoesNotCopy_WhenAccessingMutableReference_WhileItIsUniquelyReferenced() {
-        copyonwrite.mutatingReference.append("foo")
+        for var value in values {
+            value.mutatingReference.append("foo")
 
-        XCTAssertEqual(copyonwrite.reference, "foo")
+            XCTAssertEqual(value.reference, "foo")
+        }
     }
 
     func test_ReferenceDoesCopy_WhenAccessingMutableReference_WhileItIsNotUniquelyReferenced() {
-        let old = copyonwrite!
-        copyonwrite.mutatingReference.append("foo")
-
-        XCTAssertEqual(old.reference, "")
+        for var value in values {
+            let old = value
+            value.mutatingReference.append("foo")
+            
+            XCTAssertEqual(old.reference, "")
+        }
     }
 }

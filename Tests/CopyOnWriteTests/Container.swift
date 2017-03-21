@@ -44,6 +44,12 @@ extension Container: NSCopying {
     }
 }
 
+extension Container: NSMutableCopying {
+    func mutableCopy(with zone: NSZone? = nil) -> Any {
+        return Container(value: self.value)
+    }
+}
+
 extension Container: Cloneable {
     func clone() -> Self {
         return type(of: self).init(value: self.value)
