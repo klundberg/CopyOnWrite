@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7985B9441E5BF1C800C100E7 /* CopyOnWrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7985B93A1E5BF1C800C100E7 /* CopyOnWrite.framework */; };
 		7985B9491E5BF1C800C100E7 /* CopyOnWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9481E5BF1C800C100E7 /* CopyOnWriteTests.swift */; };
-		7985B94B1E5BF1C800C100E7 /* CopyOnWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7985B9581E5BF50700C100E7 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9571E5BF50700C100E7 /* CopyOnWrite.swift */; };
 		7985B9651E5C0FE300C100E7 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985B9641E5C0FE300C100E7 /* Container.swift */; };
 /* End PBXBuildFile section */
@@ -27,13 +26,12 @@
 /* Begin PBXFileReference section */
 		793E144C1E80E1DC00BF167D /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		793E144F1E80EB3700BF167D /* codecov.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = codecov.yaml; sourceTree = "<group>"; };
+		795D74F81F87468F00AAF26B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		7985B93A1E5BF1C800C100E7 /* CopyOnWrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CopyOnWrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyOnWrite.h; sourceTree = "<group>"; };
 		7985B93E1E5BF1C800C100E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7985B9431E5BF1C800C100E7 /* CopyOnWriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyOnWriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7985B9481E5BF1C800C100E7 /* CopyOnWriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWriteTests.swift; sourceTree = "<group>"; };
 		7985B94A1E5BF1C800C100E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7985B9551E5BF49300C100E7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		7985B9571E5BF50700C100E7 /* CopyOnWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
 		7985B9591E5BF60A00C100E7 /* CopyOnWrite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = CopyOnWrite.podspec; sourceTree = "<group>"; };
 		7985B95B1E5BF63B00C100E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -65,7 +63,7 @@
 		7985B9301E5BF1C800C100E7 = {
 			isa = PBXGroup;
 			children = (
-				7985B93C1E5BF1C800C100E7 /* Sources */,
+				7985B93C1E5BF1C800C100E7 /* CopyOnWrite */,
 				7985B9471E5BF1C800C100E7 /* CopyOnWriteTests */,
 				7985B9541E5BF48600C100E7 /* Distribution */,
 				7985B93B1E5BF1C800C100E7 /* Products */,
@@ -81,14 +79,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7985B93C1E5BF1C800C100E7 /* Sources */ = {
+		7985B93C1E5BF1C800C100E7 /* CopyOnWrite */ = {
 			isa = PBXGroup;
 			children = (
-				7985B93D1E5BF1C800C100E7 /* CopyOnWrite.h */,
 				7985B9571E5BF50700C100E7 /* CopyOnWrite.swift */,
 				7985B93E1E5BF1C800C100E7 /* Info.plist */,
 			);
-			path = Sources;
+			name = CopyOnWrite;
+			path = Sources/CopyOnWrite;
 			sourceTree = "<group>";
 		};
 		7985B9471E5BF1C800C100E7 /* CopyOnWriteTests */ = {
@@ -105,13 +103,13 @@
 		7985B9541E5BF48600C100E7 /* Distribution */ = {
 			isa = PBXGroup;
 			children = (
+				795D74F81F87468F00AAF26B /* Package.swift */,
 				7985B9691E5C17E600C100E7 /* .swift-version */,
 				7985B9681E5C164A00C100E7 /* .travis.yml */,
 				793E144C1E80E1DC00BF167D /* CHANGELOG.md */,
 				793E144F1E80EB3700BF167D /* codecov.yaml */,
 				7985B9591E5BF60A00C100E7 /* CopyOnWrite.podspec */,
 				7985B95B1E5BF63B00C100E7 /* LICENSE */,
-				7985B9551E5BF49300C100E7 /* Package.swift */,
 				7985B95C1E5BF63B00C100E7 /* README.md */,
 			);
 			name = Distribution;
@@ -124,7 +122,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7985B94B1E5BF1C800C100E7 /* CopyOnWrite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +177,7 @@
 					7985B9391E5BF1C800C100E7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					7985B9421E5BF1C800C100E7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -361,7 +358,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -369,11 +367,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/CopyOnWrite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.CopyOnWrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -385,7 +384,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -393,11 +393,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/CopyOnWrite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.CopyOnWrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
