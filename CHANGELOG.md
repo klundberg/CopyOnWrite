@@ -1,3 +1,5 @@
+# 1.0
+* Builds in swift 4 mode
 
 # 0.9
 
