@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CopyOnWrite"
-  s.version      = "0.9.0"
+  s.version      = "1.0.0"
   s.summary      = "A μframework that makes implementing value semantics easy!"
 
   s.description  = <<-DESC
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/klundberg/CopyOnWrite.git", :tag => "v#{s.version}" }
-  s.source_files = "Sources/*.swift"
+  s.source_files = "Sources/CopyOnWrite/*.swift"
 end
