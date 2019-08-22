@@ -1,3 +1,6 @@
+# 2.0
+* Uses Swift 5.1 property wrapper syntax
+
 # 1.0
 * Builds in swift 4 mode
 

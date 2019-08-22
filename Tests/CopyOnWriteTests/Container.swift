@@ -10,7 +10,7 @@ import Foundation
 import CopyOnWrite
 
 /// Helper class to test copying NSCopying and Cloneable paths in CopyOnWrite
-class Container: NSObject, ExpressibleByStringLiteral {
+final class Container: NSObject, ExpressibleByStringLiteral {
     var value: String
 
     required init(value: String = "") {
@@ -50,8 +50,8 @@ extension Container: NSMutableCopying {
     }
 }
 
-extension Container: Cloneable {
-    func clone() -> Self {
+extension Container: Copyable {
+    func copy() -> Self {
         return type(of: self).init(value: self.value)
     }
 }
