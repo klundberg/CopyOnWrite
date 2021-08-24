@@ -55,7 +55,7 @@ public struct CopyOnWrite<Reference: AnyObject> {
 }
 
 /// Describes reference types that can be copied
-public protocol Cloneable: class {
+public protocol Cloneable: AnyObject {
 
     /// Makes a copy of `self` and returns it
     ///
